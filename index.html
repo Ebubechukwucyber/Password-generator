@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta class="utf-8">
+    <title>Password generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="password-container">
+        <h3>Password generator</h3>
+        <div class="pwd" >
+            <span id="pwd-box"></span>
+            <button id ="clip-board"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="32"
+                height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="8" y="8" width="12" height="12" rx="2" />
+                <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+                </svg></button>
+        </div>
+        <form id="form">
+            <label>Number of characters</label>:
+            <input type="number" min="1" max="20"  id="length" value="20" required><br><br>
+            <label>Include numbers</label> :
+            <input type="checkbox" id="numbers" checked><br><br>
+            <label>Include capital letters</label>:
+            <input type="checkbox" checked id="capital-letter"><br><br>
+            <label>Include small letters</label>:
+            <input type="checkbox" checked id="small-letter"><br><br>
+            <label>Include symbols</label>:
+            <input type="checkbox" checked id="symbol"><br><br>
+            <input type="submit" value="Generate password"><br><br>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>

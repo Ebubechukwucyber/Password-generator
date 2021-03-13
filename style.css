@@ -1,0 +1,91 @@
+*{
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001933;
+    color:#e0e0e0;
+}
+.password-container{
+    background-color: #003366;
+    border-radius: 4px;
+    width:400px;
+    height:400px;
+      position:fixed;
+}
+h3{
+    margin-top:20px;
+text-align: center;
+color:#fff;
+}
+.pwd{
+    width:350px;
+    height:40px;
+    background-color:#fff;
+    border-radius: 1px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    position:relative;
+}
+
+span{
+font-size: 14px;
+color: #001933;
+}
+button{
+    position: absolute;
+    right:0;
+    height:41px;
+    outline: none;
+    background-color: #001933;
+    border: #001933;
+    color:white;
+    cursor: pointer;
+}
+button:active{
+ background-color:#000033;
+     transform: translateY(1%);
+     
+}
+label{
+    margin-left:30px;
+}
+input{
+    width: 30px;
+    outline: none;
+    float:right;
+    margin-right:30px;
+    color:#001933;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type="submit"]{
+    border:1px solid #001933;
+    margin-left:25px;
+    float:none;
+   width:350px;
+   height:40px;
+   background-color: #001933;
+   border-radius: 10px;;
+    color:white;
+}
+input[type="submit"]:hover{
+    background-color:#000033 ;
+    cursor:pointer;
+}
+input[type="submit"]:active{
+    transform: translateY(5%);
+}
+
